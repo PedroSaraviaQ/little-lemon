@@ -19,6 +19,7 @@ header ul {
   grid-column: 5/11;
   column-gap: 30px;
   justify-self: end;
+  font-family: "Karla";
   font-size: 20px;
   list-style: none;
 }
