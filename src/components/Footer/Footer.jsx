@@ -29,7 +29,10 @@ function Footer() {
           </ul>
         </div>
         <div className="media">
-          <h3>Social Media Links</h3>
+          <h3>
+            Social <br />
+            Media Links
+          </h3>
           <ul>
             <li>Address</li>
             <li>Phone Number</li>

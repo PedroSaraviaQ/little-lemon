@@ -18,7 +18,7 @@ footer img {
   background: white;
 }
 
-.links {
+footer .links {
   grid-column: 5/12;
   width: 100%;
   display: grid;
@@ -27,20 +27,24 @@ footer img {
   column-gap: 20px;
 }
 
-.navigation {
+footer .navigation {
   grid-column: 1/3;
 }
 
-.contact {
+footer .contact {
   grid-column: 3/5;
 }
 
-.media {
+footer .media {
   grid-column: 5/8;
 }
 
 footer h3 {
   min-height: 58px;
+}
+
+footer .media br {
+  display: none;
 }
 
 footer ul {
@@ -50,4 +54,21 @@ footer ul {
 footer li {
   line-height: 130%;
   margin: 1px 0;
+}
+
+@media screen and (max-width: 1440px) {
+  footer img {
+    grid-column: 2/4;
+  }
+  footer .links {
+    grid-column: 6/12;
+    font-size: 18px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  footer .media {
+    grid-column: 5/7;
+  }
+  footer .media br {
+    display: initial;
+  }
 }
