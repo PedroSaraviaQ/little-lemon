@@ -1,4 +1,4 @@
-main .principal {
+.banner {
   background-image: linear-gradient(#495e57, #495e57);
   background-size: 100% 320px;
   background-repeat: no-repeat;
@@ -9,12 +9,12 @@ main .principal {
   column-gap: 20px;
 }
 
-.principal div {
+.banner article {
   grid-column: 3/7;
   color: #fff;
 }
 
-.principal img {
+.banner img {
   grid-column: 7/11;
   width: 350px;
   height: auto;
@@ -22,7 +22,7 @@ main .principal {
   justify-self: end;
 }
 
-.principal h1 {
+.banner h1 {
   font-family: "Markazi Text";
   font-size: 64px;
   font-weight: normal;
@@ -31,15 +31,36 @@ main .principal {
   letter-spacing: 1px;
 }
 
-.principal h2 {
+.banner h2 {
   font-family: "Markazi Text";
   font-size: 40px;
   font-weight: normal;
   line-height: 30px;
 }
 
-.principal p {
+.banner p {
   font-size: 18px;
   width: 350px;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner article {
+    grid-column: 2/7;
+  }
+  .banner img {
+    grid-column: 7/12;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .banner article {
+    grid-column: 1/7;
+  }
+  .banner img {
+    grid-column: 7/13;
+  }
+  .banner p {
+    width: 320px;
+  }
 }
