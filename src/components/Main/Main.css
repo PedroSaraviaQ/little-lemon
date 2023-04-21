@@ -1,6 +1,6 @@
 main .principal {
   background-image: linear-gradient(#495e57, #495e57);
-  background-size: 100% 350px;
+  background-size: 100% 320px;
   background-repeat: no-repeat;
   padding: 30px 70px;
   margin-bottom: 100px;
@@ -11,36 +11,35 @@ main .principal {
 
 .principal div {
   grid-column: 3/7;
+  color: #fff;
 }
 
 .principal img {
   grid-column: 7/11;
   width: 350px;
   height: auto;
+  border-radius: 16px;
   justify-self: end;
 }
 
 .principal h1 {
-  font-family: "Roboto";
-  font-size: 56px;
+  font-family: "Markazi Text";
+  font-size: 64px;
+  font-weight: normal;
+  line-height: 60px;
+  color: #f4ce14;
   letter-spacing: 1px;
 }
 
 .principal h2 {
   font-family: "Markazi Text";
-  font-size: 32px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 .principal p {
-  font-family: "Roboto";
-  font-size: 20px;
-  width: 60%;
-}
-
-.principal button {
-  font-family: "Roboto";
   font-size: 18px;
-  width: 200px;
-  height: 60px;
-  border: none;
+  width: 350px;
+  margin: 20px 0;
 }
