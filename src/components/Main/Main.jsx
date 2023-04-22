@@ -1,5 +1,5 @@
 import Banner from "../../assets/images/banner.jpg";
-import Button from "../Button/Button";
+import Button from "../CallToAction/Button";
 import "./banner.css";
 
 function Main() {
