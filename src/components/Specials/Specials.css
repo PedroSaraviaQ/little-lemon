@@ -14,32 +14,12 @@
   justify-self: end;
 }
 
-.specials .cards {
-  grid-row: 2;
-  grid-column: 3/11;
-  display: flex;
-  justify-content: space-between;
-}
-
-.specials article {
-  background-color: #edefee;
-  width: 270px;
-}
-
 @media screen and (max-width: 1440px) {
   .specials h1 {
     grid-column: 2/9;
   }
   .specials > button {
     grid-column: 9/12;
-  }
-  .specials .cards {
-    grid-column: 2/12;
-    justify-self: center;
-    width: 100%;
-    row-gap: 50px;
-    column-gap: 25px;
-    flex-wrap: wrap;
   }
 }
 
@@ -50,16 +30,19 @@
   .specials > button {
     grid-column: 9/13;
   }
-  .specials .cards {
-    grid-column: 1/13;
-  }
 }
 
 @media screen and (max-width: 840px) {
+  .specials {
+    padding-top: 35px;
+  }
   .specials h1 {
     grid-column: 1/8;
   }
   .specials > button {
     grid-column: 8/13;
   }
+}
+
+@media screen and (max-width: 670px) {
 }

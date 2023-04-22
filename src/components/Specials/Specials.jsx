@@ -1,6 +1,8 @@
 import Button from "../CallToAction/Button";
 import menu from "./menu";
+import Delivery from "../../assets/images/delivery.svg";
 import "./Specials.css";
+import "./cards.css";
 
 function Specials() {
   return (
@@ -15,8 +17,8 @@ function Specials() {
             <span>{m.price}</span>
             <p>{m.description}</p>
             <div>
-              <p>Order a delivery</p>
-              <img src="" alt="" />
+              <span>Order a delivery</span>
+              <img src={Delivery} alt="" height="21px" />
             </div>
           </article>
         ))}
