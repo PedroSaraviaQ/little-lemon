@@ -8,6 +8,12 @@ const Button = styled.button`
   height: 60px;
   border: none;
   border-radius: 16px;
+  @media screen and (max-width: 840px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+  }
 `;
 
 const CallToAction = (props) => <Button>{props.children}</Button>;
