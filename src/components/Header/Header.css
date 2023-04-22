@@ -1,6 +1,5 @@
-header {
+header.grid {
   height: 75px;
-  margin: 25px 70px;
   align-items: center;
 }
 

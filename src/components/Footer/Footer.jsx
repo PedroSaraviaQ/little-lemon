@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="grid">
       <img src="" alt="" />
       <div className="links">
         <div className="navigation">

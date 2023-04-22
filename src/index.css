@@ -36,6 +36,7 @@ code {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
+  padding: 25px 70px;
 }
 
 h1 {
@@ -59,6 +60,9 @@ p {
 }
 
 @media screen and (max-width: 840px) {
+  .grid {
+    padding-inline: 50px;
+  }
   h1 {
     font-size: 57px;
   }

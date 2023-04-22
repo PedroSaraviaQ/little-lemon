@@ -1,13 +1,10 @@
-footer {
+footer.grid {
   color: #fff;
   background: #495e57;
   padding: 70px;
   font-size: 20px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
-  column-gap: 20px;
 }
 
 footer img {
@@ -92,7 +89,7 @@ footer li {
 }
 
 @media screen and (max-width: 840px) {
-  footer {
+  footer.grid {
     padding: 50px;
     column-gap: 10px;
   }
