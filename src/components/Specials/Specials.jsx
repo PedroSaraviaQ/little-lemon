@@ -4,13 +4,14 @@ import "./Specials.css";
 
 function Specials() {
   return (
-    <section className="specials">
-      <h2>This weeks specials!</h2>
+    <section className="specials grid">
+      <h1>This weeks specials!</h1>
       <Button>Online Menu</Button>
       <section className="cards">
         {menu.map((m) => (
           <article key={m.title}>
-            <h3>{m.title}</h3>
+            <img src={m.food_image} alt={m.title} />
+            <h2>{m.title}</h2>
             <span>{m.price}</span>
             <p>{m.description}</p>
             <div>
