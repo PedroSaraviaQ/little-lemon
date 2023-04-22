@@ -1,12 +1,14 @@
 import Header from "../components/Header/Header";
-import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
+import Banner from "../components/Banner/Banner";
 
 function HomePage() {
   return (
     <>
       <Header />
-      <Main />
+      <main>
+        <Banner />
+      </main>
       <Footer />
     </>
   );
