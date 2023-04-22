@@ -46,7 +46,7 @@ header ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-inline: 25px;
+    padding-inline: 25px;
     height: auto;
   }
   header img {
