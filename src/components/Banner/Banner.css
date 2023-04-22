@@ -24,24 +24,10 @@
 }
 
 .banner h1 {
-  font-family: "Markazi Text";
-  font-size: 64px;
-  font-weight: normal;
-  line-height: 60px;
   color: #f4ce14;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.banner h2 {
-  font-family: "Markazi Text";
-  font-size: 40px;
-  font-weight: normal;
-  line-height: 30px;
 }
 
 .banner p {
-  font-size: 18px;
   width: 350px;
   margin: 20px 0;
 }
@@ -85,18 +71,8 @@
   .banner img {
     width: 245px;
   }
-  .banner h1 {
-    font-size: 57px;
-  }
-  .banner h2 {
-    font-size: 35px;
-  }
   .banner p {
-    font-size: 16px;
     width: 300px;
-  }
-  .banner button {
-    font-size: 16px;
   }
 }
 
@@ -116,24 +92,14 @@
     justify-self: center;
     width: 400px;
   }
+  .banner p {
+    width: 400px;
+  }
   .banner button {
     grid-row: 3;
     grid-column: 1/13;
-  }
-  .banner h1 {
-    font-size: 64px;
-  }
-  .banner h2 {
-    font-size: 40px;
-  }
-  .banner p {
-    font-size: 18px;
-    width: 400px;
-  }
-  .banner button {
     margin: 35px;
     width: 400px;
-    font-size: 18px;
   }
 }
 
