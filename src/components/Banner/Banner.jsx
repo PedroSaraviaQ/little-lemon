@@ -4,7 +4,7 @@ import "./Banner.css";
 
 function Banner() {
   return (
-    <section className="banner">
+    <section className="banner grid">
       <article>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

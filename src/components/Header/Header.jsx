@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header>
+    <header className="grid">
       <img src={Logo} alt="Little Lemon's logo" />
       <ul>
         <li>Home</li>

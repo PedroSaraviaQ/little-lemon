@@ -3,10 +3,7 @@
   background-size: 100% 320px;
   background-repeat: no-repeat;
   padding: 30px 70px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 200px auto;
-  column-gap: 20px;
 }
 
 .banner article {

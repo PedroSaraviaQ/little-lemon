@@ -1,9 +1,6 @@
 header {
   height: 75px;
   margin: 25px 70px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 20px;
   align-items: center;
 }
 
@@ -46,7 +43,7 @@ header ul {
 }
 
 @media screen and (max-width: 840px) {
-  header {
+  header.grid {
     display: flex;
     flex-direction: column;
     gap: 25px;
