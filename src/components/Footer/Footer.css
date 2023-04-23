@@ -7,6 +7,10 @@ footer.grid {
   align-items: center;
 }
 
+footer a {
+  color: #fff;
+}
+
 footer img {
   grid-column: 3/5;
   width: 162px;
