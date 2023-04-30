@@ -1,0 +1,48 @@
+.specials {
+  grid-template-rows: auto auto;
+  row-gap: 50px;
+  padding-bottom: 50px;
+}
+
+.specials h1 {
+  grid-column: 3/8;
+  white-space: break-spaces;
+}
+
+.specials > button {
+  grid-column: 8/11;
+  justify-self: end;
+}
+
+@media screen and (max-width: 1440px) {
+  .specials h1 {
+    grid-column: 2/9;
+  }
+  .specials > button {
+    grid-column: 9/12;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .specials h1 {
+    grid-column: 1/9;
+  }
+  .specials > button {
+    grid-column: 9/13;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .specials {
+    padding-top: 35px;
+  }
+  .specials h1 {
+    grid-column: 1/8;
+  }
+  .specials > button {
+    grid-column: 8/13;
+  }
+}
+
+@media screen and (max-width: 670px) {
+}

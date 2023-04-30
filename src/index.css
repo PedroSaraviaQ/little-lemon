@@ -1,7 +1,28 @@
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/karla.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Markazi Text";
+  src: url("./assets/fonts/markazi-text.woff2") format("woff2");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
+  font-family: "Karla";
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 body {
@@ -16,17 +37,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-@font-face {
-  font-family: "Karla";
-  src: url("./assets/fonts/karla.woff2") format("woff2");
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  column-gap: 20px;
+  padding: 25px 70px;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("./assets/fonts/roboto.woff2") format("woff2");
-}
-
-@font-face {
+h1 {
   font-family: "Markazi Text";
-  src: url("./assets/fonts/markazi-text.woff2") format("woff2");
+  font-size: 64px;
+  font-weight: normal;
+  line-height: 60px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+h2 {
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 840px) {
+  .grid {
+    padding-inline: 50px;
+  }
+  h1 {
+    font-size: 57px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
