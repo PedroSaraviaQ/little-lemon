@@ -8,12 +8,14 @@ function BookingForm() {
   const onChangeFields = (e) => setFields((state) => ({ ...state, [e.target.name]: e.target.value }));
   const onSubmitForm = (e) => {
     e.preventDefault();
+    setAvailableTimes((state) => [...state].filter((hour) => hour !== fields.time));
   };
 
   return (
     <form className="booking" onSubmit={onSubmitForm}>
       <label>
-        Choose Date: <input type="date" name="date" value={fields.date} onChange={onChangeFields} />
+        Choose Date:
+        <input type="date" name="date" value={fields.date} onChange={onChangeFields} />
       </label>
       <label>
         Choose Time:

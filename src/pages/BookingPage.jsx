@@ -7,6 +7,7 @@ function BookingPage() {
     <>
       <Header />
       <main>
+        <h1>Book Now</h1>
         <BookingForm />
       </main>
       <Footer />
