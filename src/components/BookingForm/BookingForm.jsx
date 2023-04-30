@@ -1,32 +1,36 @@
+import { useState } from "react";
 import "./BookingForm.css";
 
 function BookingForm() {
-  function onSubmit(e) {
+  const [fields, setFields] = useState({ date: "", time: "", guests: 0, occasion: "" });
+  const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+
+  const onChangeFields = (e) => setFields((state) => ({ ...state, [e.target.name]: e.target.value }));
+  const onSubmitForm = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
-    <form className="booking" onSubmit={onSubmit}>
+    <form className="booking" onSubmit={onSubmitForm}>
       <label>
-        Choose Date: <input type="date" />
+        Choose Date: <input type="date" name="date" value={fields.date} onChange={onChangeFields} />
       </label>
       <label>
         Choose Time:
-        <select>
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+        <select name="time" value={fields.time} onChange={onChangeFields}>
+          <option hidden>-- Select Time --</option>
+          {availableTimes.map((hour) => (
+            <option key={hour}>{hour}</option>
+          ))}
         </select>
       </label>
       <label>
-        Number of guests: <input type="number" placeholder="1" min="1" max="10" />
+        Number of guests: <input type="number" name="guests" value={fields.guests} onChange={onChangeFields} placeholder="1" />
       </label>
       <label>
         Occasion:
-        <select>
+        <select name="occasion" value={fields.occasion} onChange={onChangeFields}>
+          <option hidden>-- Select Occasion --</option>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
